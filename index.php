@@ -65,7 +65,7 @@
                     </ul>
                 </div>
                 <div class="modulo azul">
-                    <h3>Módulo 03</h3>
+                    <h3>Módulo 03 - Variáveis</h3>
                     <ul>
                         <li>
                             <a href="exercicio.php?dir=variáveis&file=basico">Variáveis</a>
@@ -94,7 +94,7 @@
                     </ul>
                 </div>
                 <div class="modulo roxo">
-                    <h3>Módulo 04</h3>
+                    <h3>Módulo 04 - Condicionais</h3>
                     <ul>
                         <li>
                             <a href="exercicio.php?dir=controle&file=ifelse">If e Else</a>
@@ -117,19 +117,28 @@
                     </ul>
                 </div>
                 <div class="modulo laranja">
-                    <h3>Módulo 05</h3>
+                    <h3>Módulo 05 - Array</h3>
                     <ul>
                         <li>
-                            <a href="exercicio.php?dir=controle&file=basico">Array</a>
+                            <a href="exercicio.php?dir=array&file=basico">Array</a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=controle&file=desafio_index">Desafio Index</a>
+                            <a href="exercicio.php?dir=array&file=desafio_index">Desafio Index</a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=controle&file=desafio_meses">Desafio Meses</a>
+                            <a href="exercicio.php?dir=array&file=desafio_meses">Desafio Meses</a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=controle&file=mapa">Mapas</a>
+                            <a href="exercicio.php?dir=array&file=mapa">Mapas</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=get">$_GET</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=post">$_POST</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=array&file=comparacao">Comparação de Arrays</a>
                         </li>
                     </ul>
                 </div>
