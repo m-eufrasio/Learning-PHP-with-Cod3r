@@ -148,6 +148,15 @@
                         <li>
                             <a href="exercicio.php?dir=repeticoes&file=for">Laço For</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_for">Desafio For</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=foreach">Foreach</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=break_continue">Break and Continue</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo vermelho-escuro">

@@ -13,7 +13,7 @@ print '<hr>';
 
 for(; $cont <= 15; ) { 
     print "$cont <br>";
-    $cont++; // Nesse caso não tem motivo para colocar dentro do bloco.
+    $cont++; // Nesse caso, não tem motivo para colocar dentro do bloco o concatenador, o ideal é colocá-lo como parâmetro.
 }
 print '<hr>';
 
