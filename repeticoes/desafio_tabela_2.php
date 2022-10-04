@@ -14,10 +14,12 @@ $contador = 5;
 
 <table>
     <?php 
+    $num = 1;
         for($i = 0; $i < $linhas; $i++) {
             print '<tr>';
             for($j = 0; $j < $colunas; $j++) {
-                print "<td>$j</td>";
+                print "<td>$num</td>";
+                $num++;
             }
             print '</tr>';
         }

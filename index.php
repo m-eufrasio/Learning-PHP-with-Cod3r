@@ -169,13 +169,16 @@
                         <li>
                             <a href="exercicio.php?dir=repeticoes&file=desafio_tabela_2">Desafio Tabela #02</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_tabela_2_cor">Desafio Tabela #02 - Correção</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo vermelho-escuro">
-                    <h3>Módulo 07</h3>
+                    <h3>Módulo 07 - Funções</h3>
                     <ul>
                         <li>
-                            <a href="#">Exercício A</a>
+                            <a href="exercicio.php?dir=funcoes&file=escopo">Funções e Escopo</a>
                         </li>
                         <li>
                             <a href="#">Exercício B</a>
