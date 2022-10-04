@@ -181,10 +181,10 @@
                             <a href="exercicio.php?dir=funcoes&file=escopo">Funções e Escopo</a>
                         </li>
                         <li>
-                            <a href="#">Exercício B</a>
+                            <a href="exercicio.php?dir=funcoes&file=args_retorno">Argumentos e Retorno</a>
                         </li>
                         <li>
-                            <a href="#">Exercício C</a>
+                            <a href="exercicio.php?dir=funcoes&file=palindromo">Desafio Palíndromo</a>
                         </li>
                     </ul>
                 </div>
