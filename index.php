@@ -186,6 +186,9 @@
                         <li>
                             <a href="exercicio.php?dir=funcoes&file=palindromo">Desafio Palíndromo</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=funcoes&file=args_variaveis">Argumentos Variáveis</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">
