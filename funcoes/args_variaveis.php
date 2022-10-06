@@ -23,7 +23,7 @@ print somaCompleta(1, 2, 3, 4, 5);
  * neste caso irá ser incluido um array dentro de outro. Logo é preciso 
  * inserir os ... antes do argumento (caso ele seja array). ** */
 
- $array = [6 ,7 , 8];
+ $array = [6 ,7, 8];
  print '<br>' . somaCompleta(...$array);
 
  // É possível criar uma function com arugmento atômico e array:
@@ -37,4 +37,4 @@ print somaCompleta(1, 2, 3, 4, 5);
  }
 
  print '<br>';
- membros("Ana Silva", "Pedro", "Rafaela", "Amanda");
+ membros("Ana Silva", "Pedro", "Rafaela", "Amanda"); // O primeiro nome vai para o primeiro argumento. O restante entra no array.
