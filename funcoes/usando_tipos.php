@@ -19,6 +19,14 @@ function somar2(int $a, int $b) {
 }
 
 print somar2(1, 2) . '<br>'; // Nesse caso irá funcionar normalmente pois os valores são int.
-print somar1(1.7, 2.5) . '<br>'; //  Aqui os valore NÃO serão truncados. (antes sim).
-print somar1(1, '4dois') . '<br>'; // 
+print somar2(1.7, 2.5) . '<br>'; //  Aqui os valore NÃO serão truncados. (antes sim).
+//print somar2(1, '4dois') . '<br>'; // 
+// Os valores serão convertidos após gerar a resposta:
+function somar3($a, $b): int {
+  print "<span>Somando $a + $b = </span>";
+  return $a + $b; // Aqui é convertido.
+} 
 
+print somar3(1, 2) . '<br>';
+print somar3(1.7, 2.5) . '<br>'; 
+print somar3(1, '4dois') . '<br>';  

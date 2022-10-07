@@ -195,6 +195,9 @@
                         <li>
                             <a href="exercicio.php?dir=funcoes&file=usando_tipos">Usando Tipos</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=funcoes&file=anonimos">Funções Anônimas</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">

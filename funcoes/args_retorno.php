@@ -1,7 +1,7 @@
 <div class="titulo">Argumentos e Retorno</div>
 
 <?php
-// É um algoritmo que não recebe nenhuma entra, mas processa e retorna algo.
+// É um algoritmo que não recebe nenhuma entrada, mas processa e retorna algo.
 function obterMensagem() {
     return 'Seja bem vindo(a)';
 }

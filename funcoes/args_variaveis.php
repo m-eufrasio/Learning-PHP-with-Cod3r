@@ -8,7 +8,7 @@ function soma($a, $b) {
 print soma(14, 15) . '<br>';
 print soma(6, 5, 4) . '<br>'; // Quando passa do número de argumentos, eles são ignorados.
 
-function somaCompleta(...$numeros) { // Colocando os ... os argumentos serão colocados detnro de um array. 
+function somaCompleta(...$numeros) { // Colocando os ... os argumentos serão colocados dentro de um array. 
   $soma = 0;
   foreach($numeros as $num) { // Através do foreach é possível adicionar mais valores de parâmetros.
     $soma += $num;
