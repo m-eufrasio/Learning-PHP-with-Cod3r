@@ -213,16 +213,10 @@
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">
-                    <h3>Módulo 08</h3>
+                    <h3>Módulo 08 - Paradigma Orientado a Objetos</h3>
                     <ul>
                         <li>
-                            <a href="#">Exercício A</a>
-                        </li>
-                        <li>
-                            <a href="#">Exercício B</a>
-                        </li>
-                        <li>
-                            <a href="#">Exercício C</a>
+                            <a href="exercicio.php?dir=funcoes&file=classes_objetos">Primeira Classe</a>
                         </li>
                     </ul>
                 </div>
