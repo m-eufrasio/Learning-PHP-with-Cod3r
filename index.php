@@ -216,7 +216,7 @@
                     <h3>Módulo 08 - Paradigma Orientado a Objetos</h3>
                     <ul>
                         <li>
-                            <a href="exercicio.php?dir=funcoes&file=classes_objetos">Primeira Classe</a>
+                            <a href="exercicio.php?dir=classes_objetos&file=classe">Primeira Classe</a>
                         </li>
                     </ul>
                 </div>
