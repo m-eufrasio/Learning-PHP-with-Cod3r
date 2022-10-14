@@ -205,21 +205,27 @@
                             <a href="exercicio.php?dir=funcoes&file=recursividade">Recursividade</a>
                         </li>
                         <li>
-                            <a href="exercicio.php?dir=funcoes&file=map_filter">Map & Filter</a>
+                        <a href="exercicio.php?dir=funcoes&file=map_filter">Map & Filter</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=funcoes&file=desafio_recursivo">Desafio Recursão</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=funcoes&file=retornando_funcao">Retornando Função</a>
                         </li>
                     </ul>
                 </div>
                 <div class="modulo azul-escuro">
-                    <h3>Módulo 08</h3>
+                    <h3>Módulo 08 - Paradigma Orientado a Objetos</h3>
                     <ul>
                         <li>
-                            <a href="#">Exercício A</a>
+                            <a href="exercicio.php?dir=classes_objetos&file=classe">Primeira Classe</a>
                         </li>
                         <li>
-                            <a href="#">Exercício B</a>
+                            <a href="exercicio.php?dir=classes_objetos&file=desafio_classe">Desafio Classe</a>
                         </li>
                         <li>
-                            <a href="#">Exercício C</a>
+                            <a href="exercicio.php?dir=classes_objetos&file=construtor_destrutor">Construtor & Destrutor</a>
                         </li>
                     </ul>
                 </div>

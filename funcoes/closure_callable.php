@@ -29,7 +29,8 @@ print '<br>';
 executar1(2, 3, '+', $soma1); 
 executar1(2, 3, '+', soma2); 
 
-/* ** CLOSURE É UMA FUNCTION DENTRO DE UMA CLASSE ** */
+/* ** CLOSURE É UMA FUNCTION DENTRO DE UMA CLASSE,
+* É TAMBÉM UMA CLASSE QUE REPRESENTA UMA FUNCTION ANÔNIMA ** */
 
 function executar2($a, $b, $op, Closure $funcao) {
   $resultado = $funcao($a, $b) ?? 'Nada';

@@ -1,6 +1,11 @@
 <div class="titulo">Recursividade</div>
 
-<!-- Recursividade é uma função que chama ela mesma  -->
+<!-- Recursividade é uma função que chama ela mesma:
+1° - Um algoritmo recursivo deve ter um fim, um caso básico;
+2° - Deve mudar o seu estado, e se aproximar do seu estado básico a cada
+chamada;
+3° - Deve chamar a si mesmo recursivamente;
+-->
 
 <?php
 // Tentativa
@@ -24,6 +29,7 @@ function somaUmAte($numero) {
 
 print somaUmAte(5) . '<br>';
 print '<br>';
+
 // Outra forma de fazer:
 function somaUmAte2($numero) {
   $soma = 0;
@@ -33,8 +39,9 @@ function somaUmAte2($numero) {
   return $soma;
 }
 
-print somaUmAte2(5);
+print somaUmAte2(6);
 print '<br>';
+
 // Versão recursiva:
 /* ** DUAS COISAS SÃO FUNDAMENTAIS, CONDIÇÃO DE PARADA E A ABSTRAÇÃO DO PROBLEMA ** */
 function somaRecursivaUmAte($numero) {
