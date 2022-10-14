@@ -1,6 +1,11 @@
 <div class="titulo">Recursividade</div>
 
-<!-- Recursividade é uma função que chama ela mesma  -->
+<!-- Recursividade é uma função que chama ela mesma:
+1° - Um algoritmo recursivo deve ter um fim, um caso básico;
+2° - Deve mudar o seu estado, e se aproximar do seu estado básico a cada
+chamada;
+3° - Deve chamar a si mesmo recursivamente;
+-->
 
 <?php
 // Tentativa
