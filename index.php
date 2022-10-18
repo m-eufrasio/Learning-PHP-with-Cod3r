@@ -224,6 +224,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=construtor_destrutor">Construtor & Destrutor</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=herança">Herança</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
