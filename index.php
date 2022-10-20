@@ -227,6 +227,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=herança">Herança</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=visibilidade">Modificador de Acesso</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
