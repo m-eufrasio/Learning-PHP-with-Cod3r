@@ -230,6 +230,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=visibilidade">Modificadores de Acessos</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=static">Static</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
