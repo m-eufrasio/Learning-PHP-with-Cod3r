@@ -22,7 +22,7 @@ class A {
   public static function mostrarStaticA() {
     // print "Não estático = {$this->naoStatic}<br>";
     // print "Estático = {$static} '<br>';
-    print print "Estático = " . self::$static . '<br>'; // Usa self tanto para acessar um membro static num objeto ou classe.
+    print "Estático = " . self::$static . '<br>'; // Usa self tanto para acessar um membro static num objeto ou classe.
   }
 }
 
