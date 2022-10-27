@@ -36,7 +36,7 @@ print "<br>";
 print var_dump($animal);
 
 print "<br>";
-print var_dump($animal instanceof Cachorro);
+print var_dump($animal instanceof Cachorro); // instanceof é um modo de validar se o objeto é instância de algo.
 print var_dump($animal instanceof Canino);
 print var_dump($animal instanceof Mamifero);
 print var_dump($animal instanceof Animal);

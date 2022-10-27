@@ -236,6 +236,12 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=interface">Interface</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=abstract">Abstract</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=desafio_erros">Desafio dos 7 Erros</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
