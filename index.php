@@ -227,6 +227,27 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=construtor_destrutor">Construtor & Destrutor</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=herança">Herança</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=visibilidade">Modificadores de Acessos</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=static">Static</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=interface">Interface</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=abstract">Abstract</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=desafio_erros">Desafio dos 7 Erros</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=final">Modificador Final</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
