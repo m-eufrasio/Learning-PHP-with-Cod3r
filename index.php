@@ -251,6 +251,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=trait_01">Traits #01</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=trait_02">Traits #02</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">

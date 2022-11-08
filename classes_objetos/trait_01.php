@@ -17,7 +17,7 @@ trait validacaoMelhor {
   public $b = "Valor b";
   private $c = "Valor c (privado)";
 
-  public function vlaidarStringMelhor($str) {
+  public function validarStringMelhor($str) {
     return isset($str) && trim($str);
   }
 }
@@ -37,7 +37,7 @@ class Usuario {
 $usuario = new Usuario();
 var_dump($usuario->validarString(' '));
 print '<br>';
-var_dump($usuario->vlaidarStringMelhor(' '));
+var_dump($usuario->validarStringMelhor(' '));
 print '<br>';
 print $usuario->a . '<br>' . $usuario->b;
 var_dump($usuario->imprimirValorC());
