@@ -8,7 +8,7 @@ class A {
   // Ou seja, existe apenas um único valor para aquele tipo de classe.
   public static $static = "Variável de classe {estática}";
   // Normalmente é usado quando se tem constantes.
-  // Toda instãncia tem acesso ao atributo static, porém o valor sempre vai
+  // Toda instância tem acesso ao atributo static, porém o valor sempre vai
   // ser o mesmo, seja um valor de const ou variável.
   public function mostrarA() {
     print "Não estático: {$this->naoStatic} <br>";

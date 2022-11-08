@@ -245,6 +245,9 @@
                         <li>
                             <a href="exercicio.php?dir=classes_objetos&file=final">Modificador Final</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objetos&file=trait_01">Traits #01</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
