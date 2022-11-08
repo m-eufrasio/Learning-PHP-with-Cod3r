@@ -205,6 +205,9 @@
                             <a href="exercicio.php?dir=funcoes&file=recursividade">Recursividade</a>
                         </li>
                         <li>
+                        <a href="exercicio.php?dir=funcoes&file=map_filter">Map & Filter</a>
+                        </li>
+                        <li>
                             <a href="exercicio.php?dir=funcoes&file=desafio_recursivo">Desafio Recursão</a>
                         </li>
                         <li>
