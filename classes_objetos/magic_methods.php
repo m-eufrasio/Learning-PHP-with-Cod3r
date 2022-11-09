@@ -5,7 +5,8 @@
 * Tudo que possui dois underscore seguido com o nome é um método mágico,
 * eles são métodos únicos do PHP usados nas classes.
 */
-class Pessoa {
+class Pessoa
+{
 
     public $nome;
     public $idade;
