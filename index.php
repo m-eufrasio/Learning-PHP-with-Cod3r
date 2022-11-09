@@ -263,16 +263,16 @@
                     </ul>
                 </div>
                 <div class="modulo roxo-escuro">
-                    <h3>Módulo 09</h3>
+                    <h3>Módulo 09 - Includes</h3>
                     <ul>
                         <li>
-                            <a href="#">Exercício A</a>
+                            <a href="exercicio.php?dir=includes&file=include">Include</a>
                         </li>
                         <li>
-                            <a href="#">Exercício B</a>
+                            <a href="exercicio.php?dir=includes&file=include_funcao">Include Função</a>
                         </li>
                         <li>
-                            <a href="#">Exercício C</a>
+                            <a href="exercicio.php?dir=includes&file=include_require">Include vs Require</a>
                         </li>
                     </ul>
                 </div>
