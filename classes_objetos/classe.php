@@ -23,3 +23,4 @@ $c2 = new Cliente; // Novo objeto instanciado.
 $c2->nome = "Gabriel";
 $c2->idade = 43;
 $c2->apresentar();
+

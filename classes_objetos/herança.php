@@ -4,7 +4,7 @@
 class Pessoa {
   public $nome;
   public $idade;
-  // Os nomes do atributos, quanto passados como argumentos, pode mudar o nome!
+  // Os nomes dos atributos, quanto passados como argumentos, pode mudar o nome!
   function __construct($novoNome, $novaIdade) { 
     $this->nome = $novoNome;
     $this->idade = $novaIdade;
