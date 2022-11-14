@@ -11,7 +11,7 @@ include('arquivo_inexistente.php');
 print "Usando require com arquivo inexistente...<br>";
 require('arquivo_inexistente.php');
 
-print "Não achou mesmo... <br>";
+print "Não achou mesmo... <br>"; 
 
 /**
  * Via de regra vc gostaria de ser notificado quando um arquivo não existe

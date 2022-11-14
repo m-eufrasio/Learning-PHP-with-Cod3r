@@ -11,5 +11,5 @@ if(!function_exists('soma')) { // o parâmetro precisa ser dentro de aspas.
 }
 
 /**
- * a função function_exists() valida uam function.
+ * a função function_exists() valida uma function.
  */
