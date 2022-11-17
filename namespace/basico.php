@@ -52,6 +52,6 @@ print \strpos('Texto genérico para busca', 'busca') . '<br>';
 /*
 <?php namespace games\s\sub\name; ?> 
 
-* Esse namespce acima é um exemplo de sub-namespace, no qual é acessado
+* Esse namespace acima é um exemplo de sub-namespace, no qual é acessado
 * um caminho absoluto.
 */
