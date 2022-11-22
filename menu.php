@@ -281,6 +281,9 @@
                         <li>
                             <a href="exercicio.php?dir=namespace&file=use_as">Use/As</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=namespace&file=teste_desafio">Desafio Use/As</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
