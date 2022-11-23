@@ -1,7 +1,6 @@
 <?php
 
-namespace Usuario;
-use \Pessoa\Pessoa;
+require_once('namespace\Comum\pessoa_desafio.php');
 
 Class Usuario extends Pessoa
 {

@@ -1,6 +1,4 @@
 <?php
-namespace Pessoa;
-
 class Pessoa
 {
   public $nome;

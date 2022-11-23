@@ -286,5 +286,13 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modulo ciano">
+                    <h3>Módulo 11 - Try | Catch</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=tratamento_erro&file=try_catch">Try | Catch</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
