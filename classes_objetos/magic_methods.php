@@ -46,7 +46,7 @@ class Pessoa
     {
         print "Alterando atributos não declarados {$atrib2}/{$valor}";
     }
-    // Esse método verificad quando vc chama um método num objeto que não existe.
+    // Esse método verifica quando vc chama um método num objeto que não existe.
     function __call($metodo, $params)
     {
         print "Tentando executar método ${metodo}.";
