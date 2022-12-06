@@ -3,7 +3,7 @@
 <?php
 class faixaEtariaException extends Exception {
     public function __construct($message, $code = 0,
-        $previus = null) {
+        $previous = null) {
             print "Erro personalizado: $message <br>"; // Para ver a mensagem na construção;
             parent::__construct($message, $code, $previous);
     }
@@ -27,5 +27,6 @@ foreach($idadesAvaliadas as $idade) {
         print "Idade: $idade, $tempRestante anos restantes <br>";
     } catch(faixaEtariaException $e) {
         print "Não foi possível calcular para $idade anos. <br>";
+        print "Motivo: {$e->getMessage()} <br>";
     }
 }

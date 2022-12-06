@@ -295,6 +295,9 @@
                         <li>
                             <a href="exercicio.php?dir=tratamento_erro&file=erro_personalizado">Erro Personalizado</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=tratamento_erro&file=desafio_intdiv">Desafio intdiv</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
