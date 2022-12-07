@@ -22,7 +22,7 @@ function intdiv($dividendo, $divisor)
     return $dividendo / $divisor;
 }
 
-class divisaoException extends Exception
+class divisaoException extends \Exception
 {
     public function __construct($message, $code = 0, $previous = null) {
         print "Erro ao dividir: $message <br>";
@@ -35,17 +35,23 @@ function todasDivisoes($calculo)
     if ($calculo == 0) {
         throw new divisaoException("Divisão por zero não é permitido!");
     }
-    if(intdiv(8, 3)) {
+    if($calculo != ceil($calculo)) {
         throw new divisaoException("Valores quebrados não são permitidos!");
     }
+    return $calculo;
 }
-$divisaoPorZero = intdiv(8, 0);
+$divisores = [0, 2, 3];
 
-try {
-    print $divisaoPorZero;
-} catch(divisaoException $e) {
-    print "Não foi possível dividir: {$e->getMessage()}, valor gerado: $divisaoPorZero <br>";
+foreach($divisores as $d) {
+    try {
+        $tentativaDeCalculo = intdiv(8, $d);
+        $verificaCalculo = todasDivisoes($d);
+        print $tentativaDeCalculo;
+    } catch(divisaoException $e) {
+        print "Não foi possível dividir: {$e->getMessage()}, valor gerado:  <br>";
+    }
 }
+
 
 
 

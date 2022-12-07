@@ -1,15 +1,18 @@
 <div class="titulo">Erro Personalizado</div>
 
 <?php
-class faixaEtariaException extends Exception {
+class faixaEtariaException extends Exception
+{
     public function __construct($message, $code = 0,
-        $previous = null) {
+        $previous = null)
+        {
             print "Erro personalizado: $message <br>"; // Para ver a mensagem na construção;
             parent::__construct($message, $code, $previous);
-    }
+        }
 }
 
-function calcularTempoAposentadoria($idade) {
+function calcularTempoAposentadoria($idade)
+{
     if($idade < 18) {
         throw new faixaEtariaException('Ainda está muito longe');
     }
