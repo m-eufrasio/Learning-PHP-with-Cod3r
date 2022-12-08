@@ -19,10 +19,10 @@ try {
     // vai chegar na linha do print intdiv e gerar um erro de divisão por zero
     // e vai exibir a mensagem 'Divisão por zero'.
     throw new Exception('Um erro desconhecido aconteceu');
-    print intdiv(7,0);
+    print intdiv(7, 0);
 } catch(DivisionByZeroError $e) {
     print 'Divisão por zero <br>';
-} catch(Throwable $e) { // Tudo cai aqui, erro ou exceção;
+} catch(Throwable $e) { // Em throwable, tudo está nele: erros ou exceções;
     print 'Erro encontrado: ' . $e->getMessage(). '<br>';
 } finally { // Se o try for ou não executado, o finally será acessado;
     // Se o catch funcionar, o finally será executado da mesma forma;
