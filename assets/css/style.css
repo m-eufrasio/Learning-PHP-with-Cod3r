@@ -140,6 +140,9 @@ body {
 .modulo.ciano { border: 2px solid #31ddc0; }
 .modulo.ciano > h3 { background-color: #31ddc0; }
 
+.modulo.gold { border: 2px solid #e6d00d; }
+.modulo.gold > h3 { background-color: #e6d00d; }
+
 p.divisao {
     margin-bottom: 0px;
     font-weight: bold;

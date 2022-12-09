@@ -30,10 +30,11 @@ function filtrarMensagem($errno, $errstring) {
 set_error_handler('filtraMensagem', E_WARNING);
 
 print '<hr>';
-print 4
 
 /* Você pode controlar aquilo que será reportado a partir do error_reporting,
 * tem como habilitar para que os erros sejam exibidos com ini-set, com
 * esses métodos é possível auxiliar o desenvolvedor a controlar os erros;
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+set_error_handler — Define uma função do usuário para manipular erros
 */
 

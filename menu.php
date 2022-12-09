@@ -306,5 +306,13 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modulo gold">
+                    <h3>Módulo 12 - Cookie | Sessão</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=sessao&file=basico_sessao">Sessão</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
