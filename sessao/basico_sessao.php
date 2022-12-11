@@ -4,9 +4,9 @@
 // Primeiro comando que usamos para iniciar uma sessão é:
 session_start();
 // Também teremos um array assiociado a uma session;
-print_r($_SESSION);
+print_r($_SESSION); // Irá gerar alguns warnings pois os campos estão vazios;                            
 print '<br>';
-
+  
 if(!$_SESSION['nome']) {
     $_SESSION['nome'] = 'Gabriel';
 }
@@ -14,6 +14,8 @@ if(!$_SESSION['nome']) {
 if(!$_SESSION['email']) {
     $_SESSION['email'] = 'gabriel@azmail.com';
 }
+
+print_r($_SESSION);
 
 /* 
 * Se fechar o browser e abrir novamente, a sessão será encerrada, caso de mais

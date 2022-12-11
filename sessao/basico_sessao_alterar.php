@@ -1,6 +1,6 @@
 <?php
 session_start(); // Ele é necessário estar em todos os arquivos que tem sessão.
-print_r($_SESSION);
+ 
 ?>
 
 <p>
@@ -17,5 +17,5 @@ $_SESSION['email'] = 'gabrieltel@terra.com.br';
     <a href="exercicio.php?dir=sessao&file=basico_sessao">Voltar</a>
 </p>
 <p>
-    <a href="basico_sessao_limpar.php">Limpar Sessão</a>
+    <a href="exercicio.php?dir=sessao&file=basico_sessao_limpa">Limpar Sessão</a>
 </p>
