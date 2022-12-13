@@ -12,6 +12,8 @@
         <h1>Curso de PHP</h1>
         <h2>Visualização do Exercício</h2>
     </header>
+    <nav class="navegacao">
+    </nav>
     <main class="principal">
         <div class="conteudo">
             <?php
