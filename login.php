@@ -1,7 +1,8 @@
 <?php 
 session_start();
+
 if(!$_SESSION['usuario']) {
-    header('Location: login.php');
+    header('Location: file:///C:/xampp/htdocs/Learning-PHP-with-Cod3r/login.php');
 }
 ?>
 
@@ -12,9 +13,10 @@ if(!$_SESSION['usuario']) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/exercicio.css">
+    <link rel="stylesheet" href="assets/css/login.css">
     <title>Curso PHP</title>
 </head>
-<body class="exercicio">
+<body class="login">
     <header class="cabecalho">
         <h1>Curso de PHP</h1>
         <h2>Seja Bem Vindo</h2>
@@ -22,7 +24,28 @@ if(!$_SESSION['usuario']) {
 
     <main class="principal">
         <div class="conteudo">
-
+            <h3>Identifique-se</h3>
+            <!-- É possível usar o endif, porém no lugar de chaves usa dois pontos -->
+            <?php if ($_SESSION['erros']) : ?>
+            <!-- Para controlar os possíveis erros, é percorrido a lista. -->
+                <div class="erros">
+                    <?php foreach ($_SESSION['erros'] as $erro): ?>
+                        <p><?= $erro ?></p>
+                    <?php endforeach ?>
+                </div>
+            <?php endif ?>
+            <form action="#" method="POST">
+                <div>
+                    <!-- O for da label faz referência ao id. -->
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <button>Entrar</button>
+            </form>
         </div>
     </main>
     <footer class="rodape">
@@ -30,3 +53,37 @@ if(!$_SESSION['usuario']) {
     </footer>
 </body>
 </html>
+
+<?php 
+session_start();
+
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+
+if($_POST['email']) {
+    $usuarios = [
+        [
+            "nome" => "Matheus",
+            "email" => "math@gmail.com",
+            "senha" => "123"
+        ]
+    ];
+    // irá validar o usuário e a senha:
+    foreach($usuarios as $usuario) {
+        $emailValido = $email === $usuario['email'];
+        $senhaValido = $senha === $usuario['senha'];
+        // Se validado, os erros de login serão anulados e o nome setado
+        // depois será direcionado para a tela principal.
+        if($emailValido && $senhaValido) {
+            $_SESSION['erros'] = NULL;
+            $_SESSION['usuario'] = $usuario['nome'];
+            header('Location: index.php');
+
+        }
+    }
+    // Caso não seja válido, será exiido uma mensagem de erro!
+    if(!$_SESSION['usuario']) {
+        $_SESSION['erros'] = "Usuário/Senha inválidos"; 
+    }
+}
+?>

@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if(!$_SESSION['usuario']) {
-    header('Location: login.php');
+    header('Location: file:///C:/xampp/htdocs/Learning-PHP-with-Cod3r/login.php');
 }
 ?>
 
