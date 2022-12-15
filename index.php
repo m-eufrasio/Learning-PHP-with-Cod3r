@@ -13,6 +13,8 @@
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
+        <span class="usuario">Usuário: <?= $_SESSION['usuario'] ?></span>
+        <a href="logout.php">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
