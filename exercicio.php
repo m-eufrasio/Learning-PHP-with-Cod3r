@@ -7,7 +7,7 @@ if($_COOKIE['usuario']) { // Se tiver cookie.
 }
 
 if(!$_SESSION['usuario']) {
-    header('Location: file:///C:/xampp/htdocs/Learning-PHP-with-Cod3r/login.php');
+    header('Location: login.php');
 }
 ?>
 
