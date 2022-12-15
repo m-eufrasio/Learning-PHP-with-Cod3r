@@ -1,7 +1,13 @@
 <?php 
 session_start();
+
+if($_COOKIE['usuario']) { // Se tiver cookie.
+    // A sessão recebe o usuário salvo em cookie.
+    $_SESSION['usuario'] = $_COOKIE['usuario']; 
+}
+
 if(!$_SESSION['usuario']) {
-    header('Location: file:///C:/xampp/htdocs/Learning-PHP-with-Cod3r/login.php');
+    header('Location: login.php');
 }
 ?>
 

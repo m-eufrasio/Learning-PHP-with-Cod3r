@@ -1,3 +1,15 @@
+<?php 
+session_start();
+
+if($_COOKIE['usuario']) {
+    $_SESSION['usuario'] = $_COOKIE['usuario'];
+}
+
+if(!$_SESSION['usuario']) {
+    header('Location: login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +26,7 @@
     </header>
     <nav class="navegacao">
         <span class="usuario">Usuário: <?= $_SESSION['usuario'] ?></span>
-        <a href="logout.php">Sair</a>
+        <a href="\logout.php">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
