@@ -1,5 +1,11 @@
 <?php 
 session_start();
+
+if($_COOKIE['usuario']) { // Se tiver cookie.
+    // A sessão recebe o usuário salvo em cookie.
+    $_SESSION['usuario'] = $_COOKIE['usuario']; 
+}
+
 if(!$_SESSION['usuario']) {
     header('Location: file:///C:/xampp/htdocs/Learning-PHP-with-Cod3r/login.php');
 }
@@ -20,8 +26,10 @@ if(!$_SESSION['usuario']) {
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
+        <span class="usuario">Usuário: <?= @$_SESSION['usuario'] ?></span>
         <a href=<?= "basico/ola.php" ?> class="verde">Sem formatação</a>
-        <a href="index.php" class="vermelho">Voltar</a>
+        <a href="index.php" class="azul">Voltar</a>
+        <a href="logout.php" class="vermelho">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
