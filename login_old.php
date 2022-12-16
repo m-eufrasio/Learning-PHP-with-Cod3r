@@ -1,10 +1,21 @@
 <?php 
+
 session_start();
 // Vamos verificar se o usuário está no cookie:
-$email = @$_POST['email'];
-$senha = @$_POST['senha'];
+if ($_COOKIE['usuario']) {
+    // Se ele estiver, será necessário setar o valor da sessão no cookie.
+    $_SESSION['usuario'] = $_COOKIE['usuario'];
+    // Se o cookie expirar, o if dará falso;
+}
 
-if (@$_POST['email']) {
+if (!$_SESSION['usuario']) {
+    header('Location: login.php');
+}
+
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+
+if ($_POST['email']) {
     $usuarios = [
         [
             "nome" => "Matheus",
@@ -15,23 +26,24 @@ if (@$_POST['email']) {
     // irá validar o usuário e a senha:
     foreach ($usuarios as $usuario) {
         $emailValido = $email === $usuario['email'];
-        $senhaValida = $senha === $usuario['senha'];
+        $senhaValido = $senha === $usuario['senha'];
         // Se validado, os erros de login serão anulados e o nome setado
         // depois será direcionado para a tela principal.
-        if ($emailValido && $senhaValida) {
-            $_SESSION['erros'] = null;
+        if ($emailValido && $senhaValido) {
+            $_SESSION['erros'] = NULL;
             $_SESSION['usuario'] = $usuario['nome'];
             // O usuário ficará logado no sistema por 30 dias.
             // É o tempo atual somado a 60s vezes 60min vezes 24h vezes 30dias
-            $exp = time() + 60 * 60 * 24 * 30;
+            $expira = time() + 60 * 60 * 24 * 30;
             // Será salvo apenas o nome do usuário no cookie:
-            setcookie('usuario', $usuario['nome'], $exp);
+            setcookie('usuario', $usuario['nome'], $expira);
             header('Location: index.php');
+
         }
     }
     // Caso não seja válido, será exiido uma mensagem de erro!
     if (!$_SESSION['usuario']) {
-        $_SESSION['erros'] = ['Usuário/Senha inválido!'];
+        $_SESSION['erros'] = "Usuário/Senha inválidos"; 
     }
 }
 ?>
@@ -40,32 +52,34 @@ if (@$_POST['email']) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/exercicio.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <title>Curso PHP</title>
 </head>
 <body class="login">
     <header class="cabecalho">
-        <h1>Curso PHP</h1>
+        <h1>Curso de PHP</h1>
         <h2>Seja Bem Vindo</h2>
     </header>
+
     <main class="principal">
         <div class="conteudo">
             <h3>Identifique-se</h3>
             <!-- É possível usar o endif, porém no lugar de chaves usa dois pontos -->
-            <?php if (@$_SESSION['erros']): ?>
-                <!-- Para controlar os possíveis erros, é percorrido a lista. -->
+            <?php if ($_SESSION['erros']) : ?>
+            <!-- Para controlar os possíveis erros, é percorrido a lista. -->
                 <div class="erros">
                     <?php foreach ($_SESSION['erros'] as $erro): ?>
                         <p><?= $erro ?></p>
                     <?php endforeach ?>
                 </div>
             <?php endif ?>
-            <form action="#" method="post">
+            <form action="#" method="POST">
                 <div>
                     <!-- O for da label faz referência ao id. -->
-                    <label for="email">E-mail</label>
+                    <label for="email">Email</label>
                     <input type="email" name="email" id="email">
                 </div>
                 <div>
@@ -77,7 +91,7 @@ if (@$_POST['email']) {
         </div>
     </main>
     <footer class="rodape">
-        COD3R & ALUNOS © <?= date('Y'); ?>
+        MATHEUS EUFRÁSIO <?= date('Y'); ?>
     </footer>
 </body>
 </html>
