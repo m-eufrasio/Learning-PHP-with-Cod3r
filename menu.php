@@ -317,5 +317,13 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modulo indigo">
+                    <h3>Módulo 12 - API</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=datas_01">Datas 01</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
