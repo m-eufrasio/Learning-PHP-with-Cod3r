@@ -1,0 +1,9 @@
+Significado de API é de Aplication Programing Interface (Interface de Programação de Aplicativos)
+
+1° Explicação:
+É um conjunto de códigos que executam uma tarefa específica e que é muito visível ao usuário
+
+2° Exemplo:
+Seu site precisa usar um mapa indicando a localização atual do usuário, o Google Maps possui 
+uma API (código) que faz isso, logo preciso conectar o meu código a esta API para poder usá-la 
+
