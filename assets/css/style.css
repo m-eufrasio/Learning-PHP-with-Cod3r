@@ -144,8 +144,8 @@ body {
 .modulo.gold { border: 2px solid #e6d00d; }
 .modulo.gold > h3 { background-color: #e6d00d; }
 
-.modulo.indigo { border: 2px solid #d1a9e0; }
-.modulo.indigo > h3 { background-color: #d1a9e0; }
+.modulo.esmeralda { border: 2px solid #48ff75; }
+.modulo.esmeralda > h3 { background-color: #48ff75; }
 
 p.divisao {
     margin-bottom: 0px;

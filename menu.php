@@ -317,7 +317,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="modulo indigo">
+                <div class="modulo esmeralda">
                     <h3>Módulo 12 - API</h3>
                     <ul>
                         <li>
@@ -331,6 +331,12 @@
                         </li>
                         <li>
                             <a href="exercicio.php?dir=api&file=ler_arquivo">Ler Arquivo</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=upload">Upload</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=download">Download</a>
                         </li>
                     </ul>
                 </div>

@@ -35,21 +35,21 @@ print '<hr>';
  * Aqui irá verificar qual é o final do arquivo, end of file = eof.
  */
 $arquivo = fopen('teste.txt', 'r');
-while(!feof($arquivo)) {
+while (!feof($arquivo)) {
     print fgets($arquivo) . '<br>';
 }
 fclose($arquivo);
 
 // Para ler apenas caracteres:
 $arquivo = fopen('teste.txt', 'r');
-while(!feof($arquivo)) {
+while (!feof($arquivo)) {
     print fgetc($arquivo) . '<br>'; // Troca-se o 's' de gets por 'c'.
 }
 fclose($arquivo);
 
 print '<hr>';
 
-$arquivo = fopen('teste.txt', 'r+'); // o '+' realiza mais leituras.
+$arquivo = fopen('teste.txt', 'r+'); // o '+' pode ler e alterar o arquivo.
 print fgets($arquivo) . '<br>';
 print fgets($arquivo) . '<br>';
 fwrite($arquivo, "\nAdicionado durante a leitura");
