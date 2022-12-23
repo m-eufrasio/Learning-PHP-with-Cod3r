@@ -17,6 +17,15 @@ print '<br>';
 print $agora->format($formatoData1); // format formata no modelo americano.
 print '<br>';
 setlocale(LC_TIME, 'pt-BR');
+/**
+ * O getTimestamp obtém o timestamp Unix, irá dar a quantidade exata de segundos.
+ * Logo a localização aparece corretamente.
+ * 
+ * TIMESTAMP: é um número que determina um momento específico. Tipicamente é
+ * expresso como o "número de segundos desde 1/1/1970 00:00 em Londres",
+ * mas poderia ser qualquer outra base. A ideia do timestamp é que ele vale
+ * no mundo todo, ou seja, ele identifica o momento exato em que algo aconteceu.
+ */
 print strftime($formatoData2, $agora->getTimestamp()) . '<br>';
 // É possível passar parâmetros para o DateTime.
 $amanha = new DateTime('+1 day'); // Acrescentado mais um dia.
@@ -49,5 +58,15 @@ $timeZone = new DateTimeZone('America/Sao_Paulo');
 // O argumento null indica que ele ainda irá pegar da data atual.
 $agora = new DateTime(null, $timeZone);
 print $agora->format('d/M/Y H:i:s');
+
+/**
+ * DateTime::modify — Alters the timestamp
+ * DateTime::setTimestamp — Sets the date and time based on an Unix timestamp
+ * DateTimeInterface::getTimestamp — Gets the Unix timestamp
+ * mktime — Get Unix timestamp for a date
+ * strtotime — Parse about any English textual datetime description into a Unix timestamp
+ * strftime — Format a local time/date according to locale settings
+ * time — Return current Unix timestamp
+ */
 
 
