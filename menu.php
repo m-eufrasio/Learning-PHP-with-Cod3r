@@ -338,6 +338,20 @@
                         <li>
                             <a href="exercicio.php?dir=api&file=download">Download</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=desafio_download">Desafio Download</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=desafio_download_cor">Correção Desafio Download</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modulo rosa">
+                    <h3>Módulo 13 - Formulário</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=formulario">Formulário</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
