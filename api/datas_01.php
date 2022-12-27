@@ -3,7 +3,7 @@
 // Linguagens usam o marco para datas a partir de 01/01/1969 
 print time() . '<br>'; // Exibido o marco 0 devido ao sistema UNIX
 /* 
-* No PHP existe o método date que irá aceietar parametros de string,
+* No PHP existe o método date que irá aceitar parâmetros de string,
 * eles definem a formatação das datas
 */
 // No PHP, a contra-barra é chamado de escape, serve para sair do efeito 
@@ -25,4 +25,8 @@ print strftime('%A, %d de %B de %Y', $proximaSemana) . '<br>';
 // o mktime exibe uma data específica que é fixa.
 $dataFixa = mktime(15, 30, 50, 1, 25, 1975);
 print strftime('%A, %d de %B de %Y - %H:%M:%S', $dataFixa) . '<br>';
+/**
+ * strftime() foi DEPRECIADO, logo use date()(para formatação independente de
+ * localidade) ou format() (para formatação dependente de localidade).
+ */ 
 
