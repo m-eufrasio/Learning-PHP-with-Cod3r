@@ -350,7 +350,7 @@
                     <h3>Módulo 13 - Formulário</h3>
                     <ul>
                         <li>
-                            <a href="exercicio.php?dir=api&file=formulario">Formulário</a>
+                            <a href="exercicio.php?dir=formulario&file=formulario">Formulário</a>
                         </li>
                     </ul>
                 </div>

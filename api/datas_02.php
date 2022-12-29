@@ -34,7 +34,7 @@ print strftime($formatoData2, $amanha->getTimestamp()) . '<br>';
 $dataFixa = new DateTime('1975-01-25 15:30:50');
 print strftime($formatoDataHora, $dataFixa->getTimestamp()) . '<br>';
 
-$amanha->modify('+1 day'); // modify() altera o valor.
+$amanha->modify('+1 day'); // modify() altera o valor do timestamp.
 print strftime($formatoDataHora, $amanha->getTimestamp()) . '<br>';
 
 $amanha->setDate(2000, 5, 20); // setDate() também altera os valores.
@@ -56,7 +56,7 @@ print '<br>';
 // Setando o timezone da área.
 $timeZone = new DateTimeZone('America/Sao_Paulo');
 // O argumento null indica que ele ainda irá pegar da data atual.
-$agora = new DateTime(null, $timeZone);
+$agora = new DateTime('null', $timeZone);
 print $agora->format('d/M/Y H:i:s');
 
 /**
