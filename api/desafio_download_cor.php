@@ -29,7 +29,9 @@ if (move_uploaded_file($tmp, $arquivo)) {
 
 <ul>
     <?php foreach($arquivos as $arquivo): ?>
-        <!-- Se a posição desse png for maior que 0, o arquivo será validado. -->
+        <!-- Se a posição desse png for maior que 0, o arquivo será validado.
+             Neste caso, quando encontra a string, o valor é convertido para
+             inteiro, por isso é comparado a 0. -->
         <?php if(stripos($arquivo, '.png') > 0): ?>
             <li>
                 <img src="\Learning-PHP-with-Cod3r\files\<?= $arquivo ?>" height="120"/>
