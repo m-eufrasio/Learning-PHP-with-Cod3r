@@ -354,5 +354,34 @@
                         </li>
                     </ul>
                 </div>
+                <div class="modulo lilas">
+                    <h3>Módulo 14 - Banco de Dados</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=create_db">Criar Banco</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=create_table">Criar Tabela</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=insert_1">Inserir Registro #01</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=select_1">Select Registro #01</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=delete_1">Excluir Registro #01</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=delete_2">Excluir Registro #02</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=insert_2">Inserir Registro #02</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=edit">Alterar Registro</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>

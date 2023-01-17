@@ -1,65 +1,86 @@
-<div class="titulo">Formulário</div>
+<div class="titulo">Inserir Registro #02</div>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-<h2> <b>Cadastro</b> </h2>
-
 <!-- Será verificado se existe algo dentro do array_post: -->
 <?php
 
+require_once('conexao.php');
+$connection = novaConexao();
+
+if ($_GET['codigo']) {
+    $sql = "SELECT * FROM cadastro WHERE id = ?";
+    $stmt = $connection->prepare($sql);
+    $stmt->bind_param("i", $_GET['codigo']);
+    if ($resultado->num_rows > 0) { //Se maior, significa que temos linhas para tratar.
+        $dados = $stmt->fetch_assoc();
+        if ($dados['nascimento']) { //Verifica se algum dos atributos tem data (no caso nascimento).
+            $dt = new DateTime($dados['nascimento']);
+            $dados['nascimento'] = $dt->format('d/m/Y');
+        }
+}
+
+
 if (count(@$_POST) > 0) {
 
+    $dados = $_POST;
     $erros = [];
 
-    //Essa função diz se foi passado algum parâmetro ou não.
-    if (!filter_input(INPUT_POST, "nome")) {
+    if (trim($dados['nome']) === "") {
         $erros["nome"] = "Nome é obrigatório <br>";
     }
-    //Irá validar o nascimento.
-    if (filter_input(INPUT_POST, "nascimento")) {
-        //Esse método cria uma data formatada.
+    if (!isset($dados['nascimento'])) {
         $data = DateTime::createFromFormat(
-            'd/m/Y', $_POST['nascimento']);
+            'd/m/Y', $dados['nascimento']);
 
         if (!$data) {
             $erros['nascimento'] = 'Data deve estar no padrão dd/mm/aaaa';
         }
     }
-    //Validar email:
-    if (!filter_var(@$_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var(@$dados['email'], FILTER_VALIDATE_EMAIL)) {
        $erros["nascimento"] = 'Email inválido <br>';
     }
-    //Validar URL:
-    if (!filter_var(@$_POST['site'], FILTER_VALIDATE_URL)) { //exige https.
+    if (!filter_var(@$dados['site'], FILTER_VALIDATE_URL)) { //exige https.
        $erros["site"] = 'Site inválido <br>';
     }
-    //Limite de quantos filhos pd ser inserido, um range.
     $filhosConfig = ['options' => ["min_range" => 0, "max_range"=> 10]];
-    //Passando um limitante como terceiro parâmetro:
-    if (!filter_var(@$_POST['filhos'], FILTER_VALIDATE_INT, $filhosConfig
-        && @$_POST['filhoa'] != 0)) {
+
+    if (!filter_var(@$dados['filhos'], FILTER_VALIDATE_INT, $filhosConfig
+        && @$dados['filhos'] != 0)) {
        $erros["filhos"] = 'Quantidade de filhos inválida <br>';
     }
 
     $salarioConfig = ['options' => ['decimal' => ',']];
-    if (!filter_var(@$_POST['salario'], FILTER_VALIDATE_FLOAT, $salarioConfig)) {
+    if (!filter_var(@$dados['salario'], FILTER_VALIDATE_FLOAT, $salarioConfig)) {
        $erros["salario"] = 'Salário inválido <br>';
     }
-/*
- * Existe algumas estratégias para verificar o nome, uma delas é usando isset.
- * 
-*/   
+
+    if(!count($erros)) {
+        //Entrando aqui, se chega no fluxo de inserção.
+        $sql = "INSERT INTO cadastro
+        (nome, nascimento, email, site, filhos, salario)
+        VALUES (?, ?, ?, ?, ?, ?)";
+
+        $stmt = $connection->prepare($sql);
+        // Temos vários parâmetros:
+        $params = [
+            $dados['nome'],
+            $dados ? $data->format('Y-m-d') : null,
+            $dados['email'],
+            $dados['site'],
+            $dados['filhos'],
+            $dados['salario'],
+        ];
+        //Passando os tipos de cada parâmetro, s de string, i de int e d de decimal (float);
+        $stmt->bind_param("ssssid", ...$params);
+
+        if ($stmt->execute()) { //Valida a execução.
+            unset($dados);
+        }
+    }
 }
 ?>
-
-<?php foreach ($erros as $erro): ?>
-    <!-- Uma forma de exibir os erros: -->
-    <!-- <div class="alert alert-danger" role="alert">
-        <?= ''//$erro ?>
-    </div> -->
-<?php endforeach ?>
-
 
 <form action="#" method="POST">
     <div class="row">
