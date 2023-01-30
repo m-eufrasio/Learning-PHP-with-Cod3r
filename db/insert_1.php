@@ -15,7 +15,7 @@ $sql = "INSERT INTO cadastro
                         8000.50
                     )";
 
-$conexao = novaConexao();
+$connection = newConnection();
 $resultado = $conexao->query($sql);
 
 if ($resultado) {

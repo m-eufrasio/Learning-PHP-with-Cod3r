@@ -69,6 +69,20 @@ if (count(@$_POST) > 0) {
 }
 ?>
 
+<form action="exercicio.php" method="GET">
+    <!-- Temos o diretório no qual a terceira parte o usuário poderá alterar, o resto não. -->
+    <input type="hidden" name="dir" value="db">
+    <input type="hidden" name="file" value="alterar">
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <input type="text" name="codigo"
+                class="form-control"
+                value="<?= $_GET['codigo'] ?>"
+                placeholder="Informe o código para consulta">
+        </div>
+    </div>
+</form>
+
 <form action="#" method="POST">
     <div class="row">
         <div class="form-group col-md-9">

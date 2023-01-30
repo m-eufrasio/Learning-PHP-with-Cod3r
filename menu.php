@@ -381,6 +381,18 @@
                         <li>
                             <a href="exercicio.php?dir=db&file=edit">Alterar Registro</a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=insert_pdo">PDO: Insert</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=select_pdo">PDO: Select</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=excluir_pdo">PDO: Delete</a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=db&file=edit_pdo">PDO: Edit</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
